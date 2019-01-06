@@ -8,7 +8,7 @@ import io.appium.java_client.remote.MobileCapabilityType;
 
 public class StartingCapabilities {
 
-	public static void Capabilities() throws MalformedURLException {
+	public static AndroidDriver<AndroidElement> Capabilities() throws MalformedURLException {
 		// TODO Auto-generated method stub
 		
 		// Before running code below, make sure
@@ -36,7 +36,7 @@ public class StartingCapabilities {
 		// Pass the second argument which is DesiredCapabilities 
 		// to set specific parameters
 		AndroidDriver<AndroidElement> driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), dc);
-		
+		return driver;
 		//AndroidUIAutomator
 	}
 
